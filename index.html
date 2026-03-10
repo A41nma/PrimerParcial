@@ -5,10 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PrimerParcial</title>
 </head>
-
 <body>
-
-    .carta{}
-    <div =""></div>
+    <div class ="carta"></div>
+    <div class="icono"></div>
 </body>
 </html>
+<style>
+    .carta{
+        width: 300px;
+        height: 152px;
+        background-color: #303030;
+        border-radius: 12px;
+        padding: 28px;
+        gap: 12px;
+        position:absolute;
+        top: 50%;
+        content: 20 Messages ;
+        /*  display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; */
+    }
+    .carta::before{
+        content: "20 Messages";
+        color: #FFFFFF;
+        font-size: 30px;
+        position: absolute;
+        top: 30%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+    }
+    .carta::content{
+        content: "4.46% ";
+        color: #27AE60;
+        font-size: 12px;
+        position: absolute;
+        top: 60%;
+        left: 10%;
+    }
+    .carta::after{
+        content:"Since last month";
+        color: #FFFFFF;
+        font-size: 12px;
+        position: absolute;
+        top: 60%;
+        left: 10%;
+
+    }
+    .icono{
+        width: 64px;
+        height: 64px;
+        background-color: #F2994A;
+        border-radius: 50%;
+        padding: 11px;
+        gap: 10px;
+        position: absolute;
+        top: 54%;
+        left: 250px;
+
+    }
+    .icono::before{
+        width: 30px;
+        height: 30px;
+        color: #F2994A;
+        position: absolute;
+        top: 54%;
+        left: 25px;
+    }
+</style>
